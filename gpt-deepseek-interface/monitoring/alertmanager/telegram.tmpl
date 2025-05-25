@@ -1,0 +1,25 @@
+{{ define "telegram.default.message" }}
+{{ if eq .Status "firing" }}
+<b>🚨 Alert Firing</b>
+{{ else }}
+<b>✅ Alert Resolved</b>
+{{ end }}
+
+<b>Status</b>: {{ .Status | toUpper }}
+<b>Alert</b>: {{ .CommonLabels.alertname }}
+<b>Severity</b>: {{ .CommonLabels.severity | title }}
+
+{{ range .Alerts }}
+{{ if .Annotations.summary }}• {{ .Annotations.summary }}{{ end }}
+{{ if .Annotations.description }}{{ .Annotations.description }}{{ end }}
+{{ if .Annotations.runbook }}📖 <a href="{{ .Annotations.runbook }}">Runbook</a>{{ end }}
+{{ if .Annotations.dashboard }}📊 <a href="{{ .Annotations.dashboard }}">Dashboard</a>{{ end }}
+
+<b>Starts at</b>: {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+{{ if eq .Status "resolved" }}
+<b>Ends at</b>: {{ .EndsAt.Format "2006-01-02 15:04:05 UTC" }}
+<b>Duration</b>: {{ .EndsAt.Sub .StartsAt | duration }}
+{{ end }}
+
+{{ end }}
+{{ end }}

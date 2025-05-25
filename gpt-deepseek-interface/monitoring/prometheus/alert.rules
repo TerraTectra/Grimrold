@@ -1,0 +1,104 @@
+groups:
+- name: node_alerts
+  rules:
+  - alert: HighCpuUsage
+    expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+    for: 5m
+    labels:
+      severity: warning
+      team: devops
+    annotations:
+      summary: "High CPU usage on {{ $labels.instance }}"
+      description: "CPU usage is {{ $value | printf "%.2f" }}% on {{ $labels.instance }}"
+      runbook: "https://example.com/runbooks/high-cpu-usage"
+      dashboard: "http://localhost:3000/d/node-exporter/node-exporter-full"
+
+  - alert: HighMemoryUsage
+    expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 > 85
+    for: 5m
+    labels:
+      severity: warning
+      team: devops
+    annotations:
+      summary: "High memory usage on {{ $labels.instance }}"
+      description: "Memory usage is {{ $value | printf "%.2f" }}% on {{ $labels.instance }}"
+      runbook: "https://example.com/runbooks/high-memory-usage"
+      dashboard: "http://localhost:3000/d/node-exporter/node-exporter-full"
+
+  - alert: HighDiskUsage
+    expr: 100 - (node_filesystem_avail_bytes{mountpoint="/"} * 100 / node_filesystem_size_bytes{mountpoint="/"}) > 85
+    for: 10m
+    labels:
+      severity: warning
+      team: devops
+    annotations:
+      summary: "High disk usage on {{ $labels.instance }}"
+      description: "Disk usage is {{ $value | printf "%.2f" }}% on {{ $labels.instance }}"
+      runbook: "https://example.com/runbooks/high-disk-usage"
+
+- name: app_alerts
+  rules:
+  - alert: AppDown
+    expr: up{job=~"test-app|app-metrics"} == 0
+    for: 1m
+    labels:
+      severity: critical
+      team: backend
+    annotations:
+      summary: "Application is down: {{ $labels.instance }}"
+      description: "The application {{ $labels.instance }} has been down for more than 1 minute"
+      runbook: "https://example.com/runbooks/application-down"
+      dashboard: "http://localhost:3000/d/app-dashboard/application-metrics"
+
+  - alert: HighRequestLatency
+    expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 1
+    for: 5m
+    labels:
+      severity: warning
+      team: backend
+    annotations:
+      summary: "High request latency on {{ $labels.instance }}"
+      description: "95th percentile request latency is {{ $value | printf "%.2f" }}s on {{ $labels.instance }}"
+      runbook: "https://example.com/runbooks/high-request-latency"
+      dashboard: "http://localhost:3000/d/app-dashboard/application-metrics"
+
+  - alert: HighErrorRate
+    # Alert if more than 5% of requests result in errors (status >= 400)
+    expr: (sum(rate(http_requests_total{status=~"[45].."}[5m])) by (endpoint) / sum(rate(http_requests_total[5m])) by (endpoint)) * 100 > 5
+    for: 5m
+    labels:
+      severity: warning
+      team: backend
+    annotations:
+      summary: "High error rate on {{ $labels.endpoint }}"
+      description: "Error rate is {{ $value | printf "%.2f" }}% on endpoint {{ $labels.endpoint }}"
+      runbook: "https://example.com/runbooks/high-error-rate"
+      dashboard: "http://localhost:3000/d/app-dashboard/application-metrics"
+
+  - alert: TestAlertWarning
+    expr: vector(1)
+    labels:
+      severity: warning
+      team: devops
+    annotations:
+      summary: "This is a test warning alert"
+      description: "This is a test warning alert to verify the alerting pipeline"
+      runbook: "https://example.com/runbooks/test-alerts"
+
+  - alert: TestAlertCritical
+    expr: vector(1)
+    for: 1m
+    labels:
+      severity: critical
+      team: devops
+    annotations:
+      summary: "This is a test critical alert"
+      description: "This is a test critical alert to verify the alerting pipeline"
+      runbook: "https://example.com/runbooks/test-alerts"
+    expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.1
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "High error rate on {{ $labels.instance }}"
+      description: "Error rate is {{ $value }}"

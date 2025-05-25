@@ -1,0 +1,13 @@
+# Keywords to filter freelance orders
+# One keyword per line
+программирование
+разработка
+веб-сайт
+python
+парсинг
+автоматизация
+
+# Excluded keywords (prefix with !)
+!wordpress
+!1с
+!битрикс

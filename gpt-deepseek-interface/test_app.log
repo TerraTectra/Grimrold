@@ -1,0 +1,273 @@
+2025-05-25 02:44:41,797 - test-app - INFO - Starting test server on http://localhost:8000
+2025-05-25 02:44:43,800 - test-app - INFO - Generating test traffic for 60 seconds...
+2025-05-25 02:44:45,842 - test-app - INFO - Root endpoint called
+2025-05-25 02:44:47,982 - test-app - INFO - Root endpoint called
+2025-05-25 02:44:50,121 - test-app - INFO - Root endpoint called
+2025-05-25 02:44:52,261 - test-app - INFO - Root endpoint called
+2025-05-25 02:44:54,404 - test-app - INFO - Root endpoint called
+2025-05-25 02:44:56,553 - test-app - INFO - Root endpoint called
+2025-05-25 02:44:58,698 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:00,845 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:02,986 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:05,130 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:07,263 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:09,395 - test-app - INFO - Generating CPU load
+2025-05-25 02:45:11,642 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:13,791 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:15,935 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:18,082 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:20,219 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:22,360 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:24,496 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:26,634 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:28,779 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:30,923 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:33,067 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:35,202 - test-app - INFO - Generating CPU load
+2025-05-25 02:45:37,450 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:39,595 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:41,742 - test-app - INFO - Root endpoint called
+2025-05-25 02:45:43,886 - test-app - INFO - Generating CPU load
+2025-05-25 02:45:44,103 - test-app - INFO - Generated 28 requests
+2025-05-25 02:45:56,139 - test-app - INFO - Starting test server on http://localhost:8000
+2025-05-25 02:45:58,147 - test-app - INFO - Generating test traffic for 60 seconds...
+2025-05-25 02:46:00,178 - test-app - INFO - Root endpoint called
+2025-05-25 02:46:02,311 - test-app - WARNING - Simulating an error
+2025-05-25 02:46:04,444 - test-app - INFO - Test interrupted by user
+2025-05-25 02:53:26,028 - test-app - INFO - Starting test server on http://localhost:8000
+2025-05-25 03:02:31,587 - test-app - INFO - Root endpoint called
+2025-05-25 03:02:34,162 - test-app - INFO - Generating CPU load
+2025-05-25 03:02:36,832 - test-app - INFO - Root endpoint called
+2025-05-25 03:02:39,379 - test-app - INFO - Root endpoint called
+2025-05-25 03:02:47,088 - test-app - INFO - Root endpoint called
+2025-05-25 03:02:49,659 - test-app - INFO - Root endpoint called
+2025-05-25 03:02:52,229 - test-app - INFO - Generating CPU load
+2025-05-25 03:02:54,871 - test-app - INFO - Generating CPU load
+2025-05-25 03:03:00,097 - test-app - INFO - Root endpoint called
+2025-05-25 03:03:02,666 - test-app - WARNING - Simulating an error
+2025-05-25 03:03:02,666 - test-app - ERROR - Error in error_endpoint: Random error occurred
+2025-05-25 03:03:05,235 - test-app - WARNING - Simulating an error
+2025-05-25 03:03:10,399 - test-app - INFO - Generating CPU load
+2025-05-25 03:03:13,043 - test-app - INFO - Root endpoint called
+2025-05-25 03:03:15,590 - test-app - INFO - Root endpoint called
+2025-05-25 03:03:18,158 - test-app - INFO - Root endpoint called
+2025-05-25 03:03:20,729 - test-app - WARNING - Simulating an error
+2025-05-25 03:03:20,730 - test-app - ERROR - Error in error_endpoint: Random error occurred
+2025-05-25 03:21:10,828 - test-app - INFO - Starting test server on http://localhost:8000
+2025-05-25 03:21:14,437 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:24,895 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:27,440 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:30,002 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:32,563 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:35,122 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:37,685 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:40,253 - test-app - INFO - Generating CPU load
+2025-05-25 03:21:42,957 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:45,530 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:48,087 - test-app - WARNING - Simulating an error
+2025-05-25 03:21:50,640 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:53,191 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:55,749 - test-app - INFO - Root endpoint called
+2025-05-25 03:21:58,298 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:00,943 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:03,487 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:08,601 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:11,151 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:13,726 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,165 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,166 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:17,326 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:17,493 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,494 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,495 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,496 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,497 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,498 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,499 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,500 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,501 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,503 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:17,503 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:17,648 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:17,649 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:17,788 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,789 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,790 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,791 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,792 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,795 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,796 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,796 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,798 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:17,957 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:17,957 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:18,088 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:18,089 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,091 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,091 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,092 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:18,230 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,231 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,232 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,234 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,235 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,235 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,236 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,237 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:18,380 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,381 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:18,506 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,508 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,508 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,509 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:18,662 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,664 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,667 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:18,668 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:18,832 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:18,981 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:19,132 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:19,327 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,329 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,329 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,330 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,331 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,331 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,332 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,333 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:19,333 - test-app - ERROR - Error in error_endpoint: Random error occurred
+2025-05-25 03:22:19,336 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,337 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,338 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,339 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,340 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:19,341 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,342 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:19,503 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:19,504 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:19,505 - test-app - ERROR - Error in error_endpoint: Random error occurred
+2025-05-25 03:22:19,506 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,506 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:19,669 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:19,811 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,812 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,813 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,814 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,815 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,816 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:19,957 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,958 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:19,958 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:20,091 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:20,092 - test-app - ERROR - Error in error_endpoint: Random error occurred
+2025-05-25 03:22:20,093 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:20,094 - test-app - INFO - Root endpoint called
+2025-05-25 03:22:20,094 - test-app - WARNING - Simulating an error
+2025-05-25 03:22:21,374 - test-app - INFO - Generating CPU load
+2025-05-25 03:22:21,558 - test-app - INFO - Root endpoint called
+2025-05-25 04:30:50,373 - test-app - INFO - Starting test server on http://localhost:8000
+2025-05-25 04:58:06,221 - test-app - INFO - Starting test server on http://localhost:8000
+2025-05-25 05:15:00,138 - test-app - INFO - Starting test server on http://localhost:8001
+2025-05-25 05:18:19,607 - test-app - INFO - Starting test server on http://localhost:8001
+2025-05-25 05:18:21,620 - test-app - INFO - Generating test traffic for 60 seconds...
+2025-05-25 05:18:23,656 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:25,801 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:27,943 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:30,073 - test-app - INFO - Generating CPU load
+2025-05-25 05:18:32,328 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:34,446 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:36,581 - test-app - INFO - Generating CPU load
+2025-05-25 05:18:38,884 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:41,014 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:43,130 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:45,251 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:47,372 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:49,498 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:51,643 - test-app - INFO - Generating CPU load
+2025-05-25 05:18:53,923 - test-app - INFO - Root endpoint called
+2025-05-25 05:18:56,053 - test-app - WARNING - Simulating an error
+2025-05-25 05:18:58,172 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:00,289 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:02,408 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:04,525 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:06,647 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:08,794 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:10,941 - test-app - INFO - Generating CPU load
+2025-05-25 05:19:13,263 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:15,426 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:17,592 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:19,752 - test-app - INFO - Root endpoint called
+2025-05-25 05:19:21,892 - test-app - INFO - Generating CPU load
+2025-05-25 05:19:22,148 - test-app - INFO - Generated 28 requests
+2025-05-25 05:37:26,882 - test-app - INFO - Starting test server on http://localhost:8001
+2025-05-25 05:37:28,889 - test-app - INFO - Generating test traffic for 60 seconds...
+2025-05-25 05:37:30,937 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:33,088 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:35,229 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:37,380 - test-app - WARNING - Simulating an error
+2025-05-25 05:37:37,380 - test-app - ERROR - Error in error_endpoint: Random error occurred
+2025-05-25 05:37:39,537 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:41,665 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:43,797 - test-app - INFO - Generating CPU load
+2025-05-25 05:37:46,089 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:48,220 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:50,357 - test-app - INFO - Generating CPU load
+2025-05-25 05:37:52,664 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:54,808 - test-app - INFO - Generating CPU load
+2025-05-25 05:37:57,085 - test-app - INFO - Root endpoint called
+2025-05-25 05:37:59,239 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:01,400 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:03,554 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:05,706 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:07,828 - test-app - INFO - Generating CPU load
+2025-05-25 05:38:10,114 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:12,262 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:14,426 - test-app - WARNING - Simulating an error
+2025-05-25 05:38:14,426 - test-app - ERROR - Error in error_endpoint: Random error occurred
+2025-05-25 05:38:16,564 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:18,717 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:20,871 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:23,023 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:25,186 - test-app - INFO - Generating CPU load
+2025-05-25 05:38:27,505 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:29,628 - test-app - INFO - Root endpoint called
+2025-05-25 05:38:29,732 - test-app - INFO - Generated 28 requests
+2025-05-25 06:10:46,723 - test-app - INFO - Starting test server on http://localhost:8001
+2025-05-25 06:10:48,735 - test-app - INFO - Generating test traffic for 60 seconds...
+2025-05-25 06:10:50,765 - test-app - INFO - Root endpoint called
+2025-05-25 06:10:52,904 - test-app - INFO - Root endpoint called
+2025-05-25 06:10:55,045 - test-app - INFO - Root endpoint called
+2025-05-25 06:10:57,177 - test-app - INFO - Root endpoint called
+2025-05-25 06:10:59,323 - test-app - INFO - Generating CPU load
+2025-05-25 06:11:01,622 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:03,752 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:05,881 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:08,022 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:10,183 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:12,337 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:14,485 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:16,641 - test-app - INFO - Generating CPU load
+2025-05-25 06:11:18,948 - test-app - INFO - Generating CPU load
+2025-05-25 06:11:21,237 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:23,403 - test-app - WARNING - Simulating an error
+2025-05-25 06:11:25,540 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:27,689 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:29,838 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:31,982 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:34,144 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:36,303 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:38,463 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:40,624 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:42,778 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:44,930 - test-app - WARNING - Simulating an error
+2025-05-25 06:11:47,086 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:49,242 - test-app - INFO - Root endpoint called
+2025-05-25 06:11:49,347 - test-app - INFO - Generated 28 requests
+2025-05-25 06:12:25,324 - test-app - INFO - Starting test server on http://localhost:8001
+2025-05-25 06:12:27,337 - test-app - INFO - Generating test traffic for 60 seconds...
+2025-05-25 06:12:29,294 - test-app - INFO - Root endpoint called
+2025-05-25 06:12:29,373 - test-app - INFO - Root endpoint called
+2025-05-25 06:12:31,522 - test-app - INFO - Root endpoint called
+2025-05-25 06:12:33,665 - test-app - INFO - Test interrupted by user
+2025-05-25 06:34:19,051 - test-app - INFO - Starting test server on http://localhost:8001
+2025-05-25 06:34:23,031 - test-app - INFO - Root endpoint called

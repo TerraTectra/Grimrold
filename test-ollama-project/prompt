@@ -1,0 +1,5 @@
+Create a simple Python script that calculates the factorial of a number. The script should:
+1. Take a number as input from the user
+2. Calculate its factorial using a recursive function
+3. Print the result
+4. Include error handling for non-integer inputs and negative numbers

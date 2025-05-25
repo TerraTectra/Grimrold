@@ -1,0 +1,29 @@
+{
+  "cookies": [
+    {
+      "name": "KWORK_SESSION",
+      "value": "REPLACE_WITH_ACTUAL_SESSION_COOKIE",
+      "domain": "kwork.ru",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://kwork.ru",
+      "localStorage": [
+        {
+          "name": "PHPSESSID",
+          "value": "REPLACE_WITH_ACTUAL_PHPSESSID"
+        },
+        {
+          "name": "isLoggedIn",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}

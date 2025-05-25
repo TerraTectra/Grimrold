@@ -1,0 +1,98 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: '3.10'
+  OLLAMA_VERSION: 'latest'
+
+jobs:
+  test-and-deploy:
+    name: Test and Deploy
+    runs-on: ubuntu-latest
+    
+    services:
+      ollama:
+        image: ollama/ollama:${{ env.OLLAMA_VERSION }}
+        ports:
+          - 11434:11434
+        options: >-
+          --health-cmd "curl -f http://localhost:11434/api/version || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        cache: 'pip'
+    
+    - name: Install Ollama
+      run: |
+        curl -fsSL https://ollama.com/install.sh | sh
+        ollama pull deepseek-coder-v2:16b
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r test_requirements.txt
+        pip install pytest-cov
+    
+    - name: Run tests
+      run: |
+        export PYTHONPATH=${{ github.workspace }}
+        python -m pytest test_runner.py -v --cov=.
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+    
+    - name: Deploy to staging
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      run: |
+        python deploy_project.py calculator --no-test
+    
+    - name: Notify Slack
+      if: always()
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACK_COLOR: ${{ job.status == 'success' && 'good' || 'danger' }}
+        SLACK_TITLE: 'Deployment Status: ${{ job.status }}'
+        SLACK_MESSAGE: 'Workflow `${{ github.workflow }}` ${{ job.status }} for `${{ github.ref }}`'
+        SLACK_USERNAME: 'GitHub Actions'
+        MSG_MINIMAL: true
+    
+    - name: Notify Telegram
+      if: always()
+      uses: appleboy/telegram-action@v1.0.0
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          *${{ github.workflow }} - ${{ job.status }}*
+          Repository: ${{ github.repository }}
+          Branch: ${{ github.ref_name }}
+          Commit: ${{ github.sha }}
+          Author: ${{ github.actor }}
+          Workflow: ${{ github.workflow }}
+          Status: ${{ job.status }}
+          Run Details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

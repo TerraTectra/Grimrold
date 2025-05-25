@@ -1,0 +1,41 @@
+# Responder configuration
+
+# API Keys
+openrouter_api_key: "" # Add your OpenRouter API key here or set in environment variable OPENROUTER_API_KEY
+
+# LLM Model settings
+provider: "openrouter"
+model: "mistralai/mistral-7b-instruct"
+
+# Submission settings
+auto_submit: false  # Set to true to enable automatic response submission
+test_mode: true    # Set to false for actual submission (not just preparing the response)
+headless: true     # Set to false to see the browser during submission
+
+# Response templates by category
+templates:
+  default: |
+    Заказ: ${title}
+    Описание: ${description}
+    ---
+    Ответ: 
+
+# Response categories with associated keywords
+categories:
+  programming:
+    - программирование
+    - разработка
+    - python
+    - код
+  design:
+    - дизайн
+    - логотип
+    - макет
+  writing:
+    - текст
+    - статья
+    - копирайтинг
+  automation:
+    - автоматизация
+    - парсинг
+    - бот

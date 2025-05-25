@@ -1,0 +1,16 @@
+# Scraper configuration
+
+# Marketplaces list
+marketplaces:
+  - name: kwork
+    enabled: true
+    url: https://kwork.ru/projects
+  - name: freelancehunt
+    enabled: true
+    url: https://freelancehunt.com/projects
+
+# Filtering settings
+min_price: 500
+
+# Keywords will be loaded from keywords.txt
+# This is just a placeholder for other settings

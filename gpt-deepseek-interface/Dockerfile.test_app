@@ -1,0 +1,10 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+RUN pip install fastapi uvicorn prometheus_client requests
+
+COPY test_app.py .
+COPY logging_config.py .
+
+CMD ["uvicorn", "test_app:app", "--host", "0.0.0.0", "--port", "8000"]
