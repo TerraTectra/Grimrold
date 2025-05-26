@@ -1,0 +1,14 @@
+{
+  "id": "default",
+  "name": "Default Model",
+  "type": "completion",
+  "description": "Default completion model for general purpose tasks",
+  "parameters": {
+    "temperature": 0.7,
+    "max_tokens": 1500,
+    "top_p": 1.0,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0
+  },
+  "enabled": true
+}
